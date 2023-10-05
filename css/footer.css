@@ -1,0 +1,39 @@
+.footer {
+    grid-column: 1 /-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.haed-footer {
+    color: orange;
+    font-size: 23px;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 650px) {
+    .haed-footer {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    .haed-footer {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,60 @@
+.header {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-gap: 20px;
+    grid-column: 1 /-1;
+    background-size: 100% 100%;
+    background-image: url('../img/cq-.jpg');
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header1 {
+    font-size: 40px;
+    color: white;
+}
+
+.header2 {
+    color: white;
+}
+
+.header-text {
+    color: orange;
+}
+
+.header-btn {
+    padding: 20px 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: orange;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.4s;
+    justify-self: center;
+    border: none;
+}
+
+.header-btn:hover {
+    background-color: white;
+    color: orange;
+}
+
+@media screen and (max-width: 770px) {
+    .header {
+        background-image: url('../img/fre.jpg');
+    }
+    .header2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header1 {
+        font-size: 20px;
+        color: white;
+    }
+    .header2 {
+        font-size: 15px;
+    }
+}

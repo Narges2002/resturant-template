@@ -1,0 +1,23 @@
+.services {
+    grid-column: 2/ 6;
+}
+
+.section-services {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-rows: repeat(2, 250px);
+    grid-auto-rows: 250px;
+    /* padding: 20px; */
+    grid-gap: 15px 20px;
+    text-align: center;
+}
+
+.service-box {
+    margin-top: 0.3rem;
+}
+
+.image {
+    border-radius: 0 45px;
+    height: 80%;
+    width: 100%;
+}
